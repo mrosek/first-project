@@ -4,13 +4,12 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
   </head>
   <body>
-  <style>
+  <style type="text/css">
   h1
     {
   text-shadow: 5px 5px 5px #C0C0C0;
   }
   </style>
-  </head>
   <body>
 
   <h1>Average age of everyone in the office:</h1>
@@ -37,7 +36,7 @@
 
       //I want a callback of average age of everyone entered
     
-    
+
         myDataRef.on('child_added', function (snapshot) {
         employees += 1;
         total_age += snapshot.val().age;
